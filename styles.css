@@ -12,7 +12,6 @@ body {
 }
 
 .infoBar {
-    margin: 0 10px;
     width: 100%;
     justify-content: end;
     color: white;
@@ -177,14 +176,15 @@ h1 {
     /* Text color for better contrast */
     text-align: center;
     /* Center text */
-    font-family: garamond;
+    
     font-size: 24px;
 }
 
 #tagline2 {
     margin: 0;
-    font-size: 16px;
-    color: black;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato','sans-serif';
 }
 
 #Packages-header {
@@ -193,6 +193,7 @@ h1 {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    transform: skewX(-10deg);
 
 }
 
@@ -292,6 +293,10 @@ h1 {
     }
     .dot{
         visibility: hidden;
+    }
+    .infoBar{
+        padding: 10px;
+        font-size: 12px;
     }
 
 }
@@ -499,7 +504,7 @@ main {
 }
 
 .testimonials .name {
-    color: blue;
+    color: rgb(2,0,36);;
 }
 
 .testimonials .desig {
@@ -529,7 +534,7 @@ main {
 }
 
 .testimonials i:hover {
-    color: blue;
+    color: rgb(2,0,36);;
 }
 
 .testimonials p {
@@ -540,7 +545,8 @@ main {
 
 .testimonials button {
     font-size: 1em;
-    background-color: blue;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: white;
     padding: 0.8em 2em;
     border-radius: 2em;
