@@ -5,31 +5,32 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-top: 0;
-    /* No initial margin */
-    padding-top: 10px;
+
 
 }
 
 .infoBar {
+    margin: 0 10px;
     width: 100%;
-    align-items: center;
+    justify-content: end;
     color: white;
     display: flex;
-    padding: 20px;
+    align-items: center;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 #socialmedia {
-    margin-left: auto;
+    display: flex;
     color: white;
-
+    margin-left: 5px;
+    align-items: center;
 }
 
 #socialmedia a {
-    margin-left: 10px;
+    margin: 10px;
     color: white;
 
 }
@@ -566,7 +567,228 @@ main {
     }
 
     .testimonials p {
-        text-align: left;
+        justify-content: center;
         padding: 1em;
     }
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    font-family: garamond;
+    font-size: 18px;
+
+}
+
+.experience-container p {
+    text-align: center;
+    padding-bottom: 2.2em;
+}
+
+
+
+.sided {
+    width: 100%;
+    font-family: garamond;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    /* Adjust the max-width as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+.left,
+.right,
+.left2,
+.right2 {
+    flex: 1;
+    margin: auto;
+
+}
+
+.left {
+    order: 1;
+    margin-right: 20px;
+
+}
+
+.right {
+    order: 2;
+    /* Change the order to 1 if you want the right div to appear first */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .sided {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sided2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left,
+    .right,
+    .left2,
+    .right2 {
+        order: 0;
+    }
+
+
+}
+
+.left h2,
+.left2 h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sided2 {
+    width: 100%;
+    font-family: garamond;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    /* Adjust the max-width as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+.left2 {
+    order: 2;
+    margin-left: 20px;
+
+}
+
+.right2 {
+    order: 1;
+    /* Change the order to 1 if you want the right div to appear first */
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.des-card {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.des-card:hover {
+    transform: scale(1.05);
+}
+
+.des-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.des-card h2 {
+
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.des-card p {
+    margin: 10px;
+    color: #555;
+    text-align: center;
+}
+
+.des-card a {
+    text-decoration: none;
+}
+
+.abt {
+    color: white;
+    background-image: url(imgaes/dubai/Banffavenue2-opt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.abt h3 {
+    text-align: start;
+    width: 70%;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+.abt p {
+    text-align: start;
+    width: 50%;
+    color: #fff;
+
+}
+
+#abt-overlay {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    font-family: garamond;
+}
+
+.bottom {
+    justify-content: center;
+    font-family: garamond;
+    padding: 10px;
+    background-color: #F7F8F8;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.bottom h2 {
+    width: 70%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
 }

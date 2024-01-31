@@ -1,17 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+
+    // Update the copyright text
+    var copyrightElement = document.getElementById("copyright");
+    copyrightElement.innerHTML = '© Studstay ' + currentYear + '. All rights reserved.';
+});
 $(document).ready(function () {
+
     window.addEventListener("scroll", function () {
         var nav = this.document.querySelector("nav");
         nav.classList.toggle("sticky", this.window.scrollY > 0)
     })
-
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the current year
-        var currentYear = new Date().getFullYear();
-
-        // Update the copyright text
-        var copyrightElement = document.getElementById("copyright");
-        copyrightElement.innerHTML = '© Studstay ' + currentYear + '. All rights reserved.';
-    });
 
     // Configure/customize these variables.
     var showChar = 250;  // How many characters are shown by default
@@ -47,6 +47,7 @@ $(document).ready(function () {
         $(this).prev().toggle();
         return false;
     });
+
 });
 
 ///slid
@@ -104,3 +105,4 @@ function toggleMenu() {
     const menuIcon = document.querySelector('.menu-icon');
     menuIcon.classList.toggle('active');
 }
+
