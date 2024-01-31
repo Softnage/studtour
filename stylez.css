@@ -8,6 +8,7 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     margin-top: 20px;
+    
 }
 
 .flex>div {
@@ -18,6 +19,7 @@
     align-items: center;
     color: #ffffff;
     font-size: calc(var(--var) * 3);
+    
 }
 
 .flex #dubai {
