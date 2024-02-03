@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
 
+
 }
 
 body {
     font-family: 'Lato', sans-serif;
     margin-top: 0;
-
+    height: 100vh;
 
 }
 
@@ -20,6 +21,10 @@ body {
     align-items: center;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.infoBar i {
+    font-family: 'Lato', 'sans-serif';
 }
 
 #socialmedia {
@@ -139,12 +144,22 @@ h1 {
 }
 
 #Packages-header {
-    background-color: #313041;
-    color: white;
+    color: #fff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    margin: 20px;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-    transform: skewX(-10deg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 100px;
+    border: 1px solid #ffffff40;
+    box-shadow: 0px 20px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    font-size: 20px;
+    font-weight: 700;
+    transform: skewX(-3deg);
 
 }
 
@@ -279,7 +294,7 @@ h1 {
 }
 
 .footer {
-    background-color: #03844E;
+    background-color: #050442;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -388,13 +403,13 @@ h1 {
 }
 
 :root {
-    --size: 120px;
+    --size: 200px;
     --radius: calc(var(--size) * 20 / 100);
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: center;
     align-items: center;
     height: 30vh;
@@ -753,9 +768,19 @@ hr.rounded {
 
 /* Media query for smaller screens */
 @media (max-width: 700px) {
+    main {
+        grid-template-columns: auto auto;
+    }
+
     .card {
         width: 100%;
         flex-wrap: wrap;
+    }
+
+    .image-card {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 100pzx;
     }
 
     #packages-list {
@@ -787,9 +812,15 @@ hr.rounded {
         visibility: hidden;
     }
 
+
     .infoBar {
         padding: 10px;
+
+    }
+
+    .infoBar i {
         font-size: 12px;
+
     }
 
     .band {
